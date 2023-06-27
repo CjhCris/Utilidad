@@ -1,0 +1,107 @@
+#Importar funcion de un csv en lista
+
+import nombredearchivo as variable
+nombre_lista =variable.funcion
+
+"""Ej:
+def GetTelefonos (file_name:str="telefonos.csv") -> list :
+    lista = []
+    file = open(file_name,"r")
+    for count,line in enumerate(file):
+        if (count == 0):
+            continue
+        line = line.strip()
+        aux_str = line.split(";")
+        lista.append({"nombre":aux_str[0],"telefono":int(aux_str[1])})
+    file.close()
+    return lista
+    
+    
+    Pasa a ser:
+    
+import michiHerramientas as Michi
+lista_telefonos = Michi.GetTelefonos()"""
+
+
+
+#para printear un elemento de una lista
+print (lista[indice])
+
+#ultimo elemento lista
+print (lista[-1])
+
+#agregar un elemento a la lista
+lista.append[valor]
+
+#añadir un valor a una lista en una posicion especifica
+nombrelista.insert([indicelista],valor_a_agregar)
+
+#eliminar un valor de una lista
+nombrelista.remove[valor]
+
+#eliminar un elemento por su indice de una lista
+nombrelista.pop[indicelista]
+
+#Ordenar > a <
+nombrelista.sort()
+
+#Ordenar de < a >
+nombrelista.sort(reverse=True)
+
+#Concatenar listas
+print(Lista1+Lista2)
+
+#Buscar el valor más pequeño en una lista
+print(min(lista))
+
+#Buscar el valor más grande en una lista
+print(max(lista))
+
+#Muestra el indice de donde se encuentra un valor
+print(lista.index(valor))
+
+#Busca un valor en una lista
+print(valor in lista)
+
+#conocer la longitud de una lista
+len(lista)
+
+#mostrar los elementos de una lista en orden descendente
+for i in range(len(lista)):
+
+#Intercalar elementos de una lista
+lista1 = ["a", "b", "c"]
+lista2 = [1 , 2  , 3]
+for i, j in zip(lista1, lista2):
+    print(i, j)
+
+"""resulta en: 
+a 1
+b 2
+c 3"""
+
+#Retorna el numero de veces que se repite un caracter en la cadena
+count() = frase.count(caracter)
+
+#Busca un substring o caracter dentro de la cadena de caracteres   
+find() = frase.find(caracter)
+
+#Funciones utiles
+
+#Para filtrar por numero las acciones a realizar \n sirve de salto de linea 
+a=int(input("\n 1 Opcion \n 2 Opcion \n " ))
+
+#Para buscar una palabra dentro de una lista
+
+def buscarpalabra():
+    for c in lista:
+        if input(palabra a buscar) in c[]:
+        print c #aquí imprimiría todo lo que tenga la palabra incluida incluyendo otros elementos de una lista si está en el mismo lugar
+
+
+#Para buscar un numero en una lista
+
+def buscarnumero():
+    for d in lista:
+        if str(input(numero a buscar)) in d[]: #Se transforma el numero a palabra
+        print d # imprime todo elemento junto al numero que buscó
